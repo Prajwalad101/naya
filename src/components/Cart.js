@@ -1,4 +1,6 @@
+import { BsFillCartFill } from 'react-icons/bs';
+
 const Cart = () => {
-  return <h5>Cart</h5>;
+  return <BsFillCartFill size='1.5rem' />;
 };
 export default Cart;
