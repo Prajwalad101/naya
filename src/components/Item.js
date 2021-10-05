@@ -1,6 +1,10 @@
+import { useContext } from 'react';
 import { BsCartPlus } from 'react-icons/bs';
+import { CartContext } from '../App';
 
 export const Item = ({ name, price, image }) => {
+  const { addToCart } = useContext(CartContext);
+
   return (
     <div className='item'>
       <img src={image} alt='name' className='item-children-top' />
@@ -11,7 +15,7 @@ export const Item = ({ name, price, image }) => {
         </div>
         <div className='item-children-right'>
           <p>Add to cart</p>
-          <BsCartPlus size='1.5rem' />
+          <BsCartPlus onClick={addToCart} />
         </div>
       </div>
     </div>

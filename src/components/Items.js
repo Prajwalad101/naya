@@ -7,7 +7,7 @@ export const Items = () => {
       {data.map((item) => {
         return (
           <Item
-            key={new Date().getTime().toString()}
+            // key={new Date().getTime().toString()}
             name={item.name}
             price={item.price}
             image={item.image}

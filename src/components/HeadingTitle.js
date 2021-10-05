@@ -1,4 +1,5 @@
 import Cart from './Cart';
+
 const HeadingTitle = () => {
   return (
     <div className='heading-title'>
