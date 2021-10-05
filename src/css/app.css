@@ -1,0 +1,10 @@
+#title {
+  font-family: 'Overlock SC', cursive;
+}
+
+.navbar {
+  display: flex;
+  margin: 0 10% 0 10%;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
