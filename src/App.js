@@ -7,23 +7,23 @@ import { Items } from './components/Items';
 import { Modal } from './components/Modal';
 
 export const CartContext = React.createContext();
+let cartId;
 
 function App() {
-  const [cartItems, setCartItems] = useState(0);
   const [openModal, setOpenModal] = useState(false);
 
-  const addToCart = (isOpen) => {
+  const addToCart = (isOpen, itemId) => {
     setOpenModal(isOpen);
+    cartId = itemId;
   };
-
   return (
     <CartContext.Provider
-      value={{ addToCart, cartItems, openModal, setOpenModal }}
+      value={{ cartId, addToCart, openModal, setOpenModal }}
     >
+      {openModal && <Modal />}
       <Title />
       <HeadingSection />
       <Items />
-      {openModal && <Modal />}
     </CartContext.Provider>
   );
 }

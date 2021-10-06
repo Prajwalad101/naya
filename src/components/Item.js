@@ -2,7 +2,7 @@ import { useContext } from 'react';
 import { BsCartPlus } from 'react-icons/bs';
 import { CartContext } from '../App';
 
-export const Item = ({ name, price, image }) => {
+export const Item = ({ name, price, image, id }) => {
   const { addToCart } = useContext(CartContext);
 
   return (
@@ -15,7 +15,7 @@ export const Item = ({ name, price, image }) => {
         </div>
         <div className='item-children-right'>
           <p>Add to cart</p>
-          <BsCartPlus onClick={() => addToCart(true)} />
+          <BsCartPlus onClick={() => addToCart(true, id)} />
         </div>
       </div>
     </div>
