@@ -15,7 +15,7 @@ export const Item = ({ name, price, image }) => {
         </div>
         <div className='item-children-right'>
           <p>Add to cart</p>
-          <BsCartPlus onClick={addToCart} />
+          <BsCartPlus onClick={() => addToCart(true)} />
         </div>
       </div>
     </div>
