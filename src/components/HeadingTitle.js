@@ -1,5 +1,6 @@
 import Cart from './Cart';
 
+// RETURNS THE HEADING TITLE AND THE CART ICON COMPONENT
 const HeadingTitle = () => {
   return (
     <div className='heading-title'>

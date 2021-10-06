@@ -1,8 +1,10 @@
 import { useContext } from 'react';
-import { BsCartPlus } from 'react-icons/bs';
+import { BsCartPlus } from 'react-icons/bs'; // react icons
 import { CartContext } from '../App';
 
+// RETURNS A SPECIFIC ITEM
 export const Item = ({ name, price, image, id }) => {
+  // function to add an specific item to cart
   const { addToCart } = useContext(CartContext);
 
   return (

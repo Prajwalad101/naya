@@ -1,13 +1,12 @@
-import { useState } from 'react';
 import { Item } from './Item';
 import { data } from '../data';
 import { v4 as uuid_v4 } from 'uuid';
 
+// CREATES AND RETURNS INDIVIDUAL ITEM COMPONENTS FROM THE DATA
 export const Items = () => {
-  const [items, setItems] = useState(data);
   return (
     <>
-      {items.map((item) => {
+      {data.map((item) => {
         return (
           <Item
             key={uuid_v4()}

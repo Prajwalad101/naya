@@ -1,5 +1,6 @@
 import NavItems from './NavItems';
 
+// RETURNS A NAVBAR WITH INDIVIDUAL NAVITEMS
 const NavBar = () => {
   return (
     <div className='navbar'>

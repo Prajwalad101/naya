@@ -1,3 +1,4 @@
+// SEARCH BOX FOR SEARCHING THE ITEMS
 const SearchBar = () => {
   return (
     <div>
