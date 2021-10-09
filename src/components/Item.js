@@ -1,12 +1,7 @@
-import { useContext } from 'react';
-import { BsCartPlus } from 'react-icons/bs'; // react icons
-import { CartContext } from '../App';
+import { CartButton } from './CartButton';
 
 // RETURNS A SPECIFIC ITEM
 export const Item = ({ name, price, image, id }) => {
-  // function to add an specific item to cart
-  const { addToCart } = useContext(CartContext);
-
   return (
     <div className='item'>
       <img src={image} alt='name' className='item-children-top' />
@@ -15,10 +10,7 @@ export const Item = ({ name, price, image, id }) => {
           <h5>{name}</h5>
           <p>Rs.{price}</p>
         </div>
-        <div className='item-children-right'>
-          <p>Add to cart</p>
-          <BsCartPlus onClick={() => addToCart(true, id)} />
-        </div>
+        <CartButton id={id} />
       </div>
     </div>
   );
