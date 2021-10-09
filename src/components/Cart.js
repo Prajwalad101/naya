@@ -1,5 +1,13 @@
 import React from 'react';
 
-export const Cart = () => {
-  return <div>Cart Items</div>;
+// import { data } from '../data';
+
+export const Cart = ({ idList }) => {
+  return (
+    <div>
+      {idList.forEach((id) => {
+        <h1>id</h1>;
+      })}
+    </div>
+  );
 };

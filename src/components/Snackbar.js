@@ -1,18 +1,10 @@
-import { useState, forwardRef, useImperativeHandle } from 'react';
+import { useContext } from 'react';
+import { SnackbarContext } from './Main';
 
 import '../css/Snackbar.css';
 
-export const Snackbar = forwardRef((props, ref) => {
-  const [showSnackbar, setShowSnackbar] = useState(false);
-
-  useImperativeHandle(ref, () => ({
-    show() {
-      setShowSnackbar(true);
-      setTimeout(() => {
-        setShowSnackbar(false);
-      }, 3000);
-    },
-  }));
+export const Snackbar = () => {
+  const { showSnackbar } = useContext(SnackbarContext);
 
   return (
     <div className='snackbar' id={showSnackbar ? 'show' : 'hide'}>
@@ -24,4 +16,4 @@ export const Snackbar = forwardRef((props, ref) => {
       </div>
     </div>
   );
-});
+};

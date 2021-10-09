@@ -1,6 +1,6 @@
 import { useContext } from 'react';
 import { BsFillCartFill } from 'react-icons/bs';
-import { CartContext } from './Main';
+import { CartContext } from '../App';
 import { Link } from 'react-router-dom';
 
 // CART THAT SHOWS THE ITEMS THAT WAS ADDED TO CART
