@@ -4,12 +4,12 @@ import { CartContext } from '../App';
 
 // CART THAT SHOWS THE ITEMS THAT WAS ADDED TO CART
 const Cart = () => {
-  const { cartItems } = useContext(CartContext);
+  const { numItems } = useContext(CartContext);
 
   return (
     <div className='heading-cart'>
       <BsFillCartFill />
-      <span>({cartItems})</span>
+      <span>({numItems})</span>
     </div>
   );
 };

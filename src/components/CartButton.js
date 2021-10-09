@@ -13,6 +13,7 @@ export const CartButton = ({ id }) => {
       <BsCartPlus
         onClick={() => {
           snackbarRef.current.show();
+          addToCart(id);
         }}
       />
     </div>
