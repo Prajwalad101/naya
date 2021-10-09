@@ -1,35 +1,23 @@
-import React, { useRef, useState } from 'react';
-
-import { HeadingSection } from './components/HeadingSection';
-import Title from './components/Title';
-import { Items } from './components/Items';
-import { Snackbar } from './components/Snackbar';
-
-export const CartContext = React.createContext();
-
-let cartId = []; // Id of the added cart item
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { Main } from './components/Main';
+import { Cart } from './components/Cart';
+import { Error } from './components/Error';
 
 function App() {
-  const snackbarRef = useRef(null);
-
-  const [numItems, setNumItems] = useState(0);
-
-  const addToCart = (itemId) => {
-    cartId.push(itemId);
-    setNumItems(cartId.length);
-  };
-
   return (
-    <>
-      <Snackbar ref={snackbarRef} />
-      <CartContext.Provider
-        value={{ cartId, numItems, addToCart, snackbarRef }}
-      >
-        <Title />
-        <HeadingSection />
-        <Items />
-      </CartContext.Provider>
-    </>
+    <Router>
+      <Switch>
+        <Route exact path='/'>
+          <Main />
+        </Route>
+        <Route path='/cart'>
+          <Cart />
+        </Route>
+        <Route path='*'>
+          <Error />
+        </Route>
+      </Switch>
+    </Router>
   );
 }
 
