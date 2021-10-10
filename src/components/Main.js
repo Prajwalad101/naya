@@ -10,9 +10,12 @@ export const SnackbarContext = React.createContext();
 
 export const Main = () => {
   const [showSnackbar, setShowSnackbar] = useState(false);
+  const [isMounted, setIsMounted] = useState(false);
 
   return (
-    <SnackbarContext.Provider value={{ showSnackbar, setShowSnackbar }}>
+    <SnackbarContext.Provider
+      value={{ showSnackbar, setShowSnackbar, isMounted, setIsMounted }}
+    >
       <Snackbar />
       <Title />
       <HeadingSection />

@@ -1,10 +1,17 @@
-import { useContext } from 'react';
+import { useEffect, useContext } from 'react';
 import { SnackbarContext } from './Main';
 
 import '../css/Snackbar.css';
 
 export const Snackbar = () => {
-  const { showSnackbar } = useContext(SnackbarContext);
+  const { showSnackbar, setIsMounted } = useContext(SnackbarContext);
+
+  useEffect(() => {
+    setIsMounted(true);
+    return () => {
+      setIsMounted(false);
+    };
+  }, [setIsMounted]);
 
   return (
     <div className='snackbar' id={showSnackbar ? 'show' : 'hide'}>
