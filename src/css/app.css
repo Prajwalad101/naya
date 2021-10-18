@@ -1,24 +1,3 @@
-#title {
-  font-family: 'Overlock SC', cursive;
-}
-
-.heading-title {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-.heading-cart {
-  display: flex;
-  align-items: center;
-}
-
-.navbar {
-  display: flex;
-  margin: 0 10% 0 10%;
-  justify-content: space-evenly;
-}
-
 .item {
   width: 20%;
 }
@@ -32,4 +11,8 @@
 
 .item-children-right p {
   margin: 0;
+}
+
+.HeadingTitle {
+  font-weight: 200;
 }

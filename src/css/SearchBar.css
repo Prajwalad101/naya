@@ -1,0 +1,39 @@
+#SearchSection {
+  display: flex;
+  justify-content: center;
+}
+
+.SearchBar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 20px 20px 20px 20px;
+  width: 100%;
+}
+
+.SearchBar i {
+  position: absolute;
+  padding-top: 4px;
+  margin-right: 20px;
+}
+
+.search-box {
+  text-indent: 7px;
+  border: 2px solid #383838;
+  border-radius: 25px;
+  width: 100%;
+  padding: 12px;
+  font-family: 'Nunito', sans-serif;
+}
+
+.search-box {
+  background-color: #f1f1f1;
+}
+
+.search-box::placeholder {
+  color: #888888;
+}
+
+input:focus {
+  outline: 1px solid rgb(37, 37, 231);
+}

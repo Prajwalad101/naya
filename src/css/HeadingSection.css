@@ -1,0 +1,16 @@
+#HeadingSection {
+  font-family: 'Overpass', sans-serif;
+  color: white;
+  background-color: #f98d8d;
+}
+
+.HeadingTitle {
+  padding-top: 15px;
+  text-align: center;
+  font-size: 1.6rem;
+  line-height: 32px;
+}
+
+.HeadingTitle h3 {
+  font-weight: 400;
+}

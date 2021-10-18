@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { Main } from './components/Main';
-import { Cart } from './components/Cart';
+import { Cart } from './components/Cart/Cart';
 import { Error } from './components/Error';
 
 export const CartContext = React.createContext();

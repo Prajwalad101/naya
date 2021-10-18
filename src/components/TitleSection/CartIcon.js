@@ -1,6 +1,6 @@
 import { useContext } from 'react';
-import { BsFillCartFill } from 'react-icons/bs';
-import { CartContext } from '../App';
+import { IoCartOutline } from 'react-icons/io5';
+import { CartContext } from '../../App';
 import { Link } from 'react-router-dom';
 
 // CART THAT SHOWS THE ITEMS THAT WAS ADDED TO CART
@@ -10,7 +10,7 @@ const CartIcon = () => {
   return (
     <div className='heading-cart'>
       <Link to='./cart'>
-        <BsFillCartFill />
+        <IoCartOutline size='1.85rem' />
         <span>({numItems})</span>
       </Link>
     </div>

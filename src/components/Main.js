@@ -1,10 +1,11 @@
-import { useState } from 'react';
+import '../css/HeadingSection.css';
 
-import React from 'react';
-import { HeadingSection } from './HeadingSection';
-import Title from './Title';
+import React, { useState } from 'react';
 import { Items } from './Items';
 import { Snackbar } from './Snackbar';
+import TitleSection from './TitleSection/TitleSection';
+import SearchBar from './SearchSection/SearchBar';
+import HeadingSection from './HeadingSection/HeadingSection';
 
 export const SnackbarContext = React.createContext();
 
@@ -17,7 +18,8 @@ export const Main = () => {
       value={{ showSnackbar, setShowSnackbar, isMounted, setIsMounted }}
     >
       <Snackbar />
-      <Title />
+      <TitleSection />
+      <SearchBar />
       <HeadingSection />
       <Items />
     </SnackbarContext.Provider>

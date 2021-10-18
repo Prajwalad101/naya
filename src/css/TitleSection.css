@@ -1,0 +1,38 @@
+#TitleSection {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+#title {
+  font-family: 'Overlock SC', cursive;
+  text-align: center;
+  font-size: 1.7rem;
+  padding-left: 25px;
+}
+
+.title {
+  font-family: 'Overlock SC', cursive;
+  font-size: 1.7rem;
+}
+
+.title h3 {
+  font-weight: lighter;
+}
+
+.HamburgerIcon {
+  margin-left: 20px;
+}
+
+.heading-cart {
+  padding: 3px 0 3px 0;
+  margin-right: 20px;
+}
+
+.heading-cart a {
+  color: black;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
