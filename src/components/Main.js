@@ -1,11 +1,12 @@
 import '../css/HeadingSection.css';
 
 import React, { useState } from 'react';
-import { Items } from './Items';
+import Items from './ExploreSection/Items';
 import { Snackbar } from './Snackbar';
 import TitleSection from './TitleSection/TitleSection';
 import SearchBar from './SearchSection/SearchBar';
 import HeadingSection from './HeadingSection/HeadingSection';
+import ExploreSection from './ExploreSection/ExploreSection';
 
 export const SnackbarContext = React.createContext();
 
@@ -21,7 +22,7 @@ export const Main = () => {
       <TitleSection />
       <SearchBar />
       <HeadingSection />
-      <Items />
+      <ExploreSection />
     </SnackbarContext.Provider>
   );
 };

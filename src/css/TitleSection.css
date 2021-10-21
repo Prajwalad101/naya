@@ -5,13 +5,6 @@
   justify-content: space-between;
 }
 
-#title {
-  font-family: 'Overlock SC', cursive;
-  text-align: center;
-  font-size: 1.7rem;
-  padding-left: 25px;
-}
-
 .title {
   font-family: 'Overlock SC', cursive;
   font-size: 1.7rem;

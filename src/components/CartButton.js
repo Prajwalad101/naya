@@ -19,9 +19,9 @@ export const CartButton = ({ id }) => {
   };
 
   return (
-    <div className='item-children-right'>
+    <div className='add-to-cart'>
+      <BsCartPlus size='1.3rem' onClick={handleClick} className='cart-icon' />
       <p>Add to cart</p>
-      <BsCartPlus onClick={handleClick} />
     </div>
   );
 };

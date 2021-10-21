@@ -1,11 +1,12 @@
 import { Item } from './Item';
-import { data } from '../data';
+import { data } from '../../data';
 import { v4 as uuid_v4 } from 'uuid';
+import React from 'react';
 
 // CREATES AND RETURNS INDIVIDUAL ITEM COMPONENTS FROM THE DATA
-export const Items = () => {
+const Items = () => {
   return (
-    <>
+    <div className='Items'>
       {data.map((item) => {
         return (
           <Item
@@ -17,6 +18,8 @@ export const Items = () => {
           />
         );
       })}
-    </>
+    </div>
   );
 };
+
+export default Items;
