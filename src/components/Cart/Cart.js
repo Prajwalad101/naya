@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { CartItem } from './CartItem';
 import CartTitle from './CartTitle';
+import CartHeading from './CartHeading';
 
 import '../../css/Cart.css';
 
@@ -20,6 +21,7 @@ export const Cart = ({ idList }) => {
   return (
     <section id='Cart'>
       <CartTitle />
+      <CartHeading noItems={itemsAdded.length} />
       {itemsAdded.map((item) => {
         return (
           <CartItem

@@ -14,3 +14,15 @@
 .title {
   font-size: 1.5rem;
 }
+
+.CartHeading {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: bolder;
+}
+
+.CartHeading p.heading {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
