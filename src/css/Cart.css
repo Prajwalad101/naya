@@ -1,0 +1,16 @@
+.CartTitle {
+  padding: 10px 10px 10px 15px;
+  text-transform: uppercase;
+  display: flex;
+  background-color: #f98d8d;
+  color: #fff;
+}
+
+.back-arrow,
+.right {
+  flex: 1;
+}
+
+.title {
+  font-size: 1.5rem;
+}

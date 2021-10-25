@@ -1,5 +1,8 @@
 import { useState } from 'react';
 import { CartItem } from './CartItem';
+import CartTitle from './CartTitle';
+
+import '../../css/Cart.css';
 
 // Functions
 import {
@@ -15,7 +18,8 @@ export const Cart = ({ idList }) => {
   const [numItems, setNumItems] = useState(defaultItems);
 
   return (
-    <div>
+    <section id='Cart'>
+      <CartTitle />
       {itemsAdded.map((item) => {
         return (
           <CartItem
@@ -27,6 +31,6 @@ export const Cart = ({ idList }) => {
         );
       })}
       <h3>Total : Rs.{calcTotalPrice(numItems)}</h3>
-    </div>
+    </section>
   );
 };
