@@ -6,10 +6,12 @@ import Items from './Items';
 
 const ExploreSection = () => {
   return (
-    <section id='ExploreSection'>
-      <p className='top-picks'>Top Picks For You</p>
-      <Items />
-    </section>
+    <div className='max-width'>
+      <section id='ExploreSection'>
+        <p className='Explore'>Explore</p>
+        <Items />
+      </section>
+    </div>
   );
 };
 

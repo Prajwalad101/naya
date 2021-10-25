@@ -1,6 +1,6 @@
 import { CartButton } from '../CartButton';
 
-// RETURNS A SPECIFIC ITEM
+// RETURNS A SPECIFIC ITEM5
 export const Item = ({ name, price, image, id }) => {
   return (
     <div className='item'>

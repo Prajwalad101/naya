@@ -9,7 +9,8 @@
   display: flex;
   align-items: center;
   text-align: center;
-  background-color: #00f593;
+  background-color: #f98d8dc7;
+  z-index: 1;
 }
 
 .snackbar .symbol {

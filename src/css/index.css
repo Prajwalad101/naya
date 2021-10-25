@@ -6,5 +6,14 @@
 
 body {
   font-family: 'Overpass', sans-serif;
-  /* font-family: 'Nunito', sans-serif; */
+}
+
+.max-width {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.trending-max-width {
+  max-width: 1200px;
+  margin: 0 auto;
 }

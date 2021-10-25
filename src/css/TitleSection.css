@@ -1,13 +1,23 @@
 #TitleSection {
   display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-  justify-content: space-between;
+  flex-direction: column;
+}
+
+.TitleBar {
+  display: grid;
+  grid-template-rows: 0.5fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+    'menu title cartIcon'
+    'searchbar searchbar searchbar';
+  align-items: end;
 }
 
 .title {
+  text-align: center;
   font-family: 'Overlock SC', cursive;
   font-size: 1.7rem;
+  grid-area: title;
 }
 
 .title h3 {
@@ -15,12 +25,18 @@
 }
 
 .HamburgerIcon {
-  margin-left: 20px;
+  display: flex;
+  align-items: flex-end;
+  margin: 10px 0 0 20px;
+  grid-area: menu;
 }
 
 .heading-cart {
+  justify-self: end;
+  grid-area: cartIcon;
   padding: 3px 0 3px 0;
   margin-right: 20px;
+  margin-left: 30px;
 }
 
 .heading-cart a {
@@ -28,4 +44,62 @@
   text-decoration: none;
   display: flex;
   align-items: center;
+}
+
+.NavBar {
+  font-size: 0.9rem;
+  grid-area: navbar;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 40px;
+  width: 70%;
+  margin: auto;
+  padding-bottom: 5px;
+  text-transform: capitalize;
+  color: rgb(80, 80, 80);
+}
+.NavBar {
+  display: none;
+}
+
+.NavBar h3 {
+  font-size: 1rem;
+}
+
+/* Greater than 400 */
+
+@media (min-width: 400px) {
+  .title {
+    font-size: 2.1rem;
+  }
+}
+
+/* Greater than 900px */
+@media (min-width: 901px) {
+  .TitleBar {
+    display: grid;
+    grid-template-rows: 1fr 0.5fr;
+    grid-template-columns: 0fr 1fr 0fr;
+    grid-template-areas:
+      'title searchbar cartIcon'
+      'navbar navbar navbar';
+    align-items: center;
+  }
+  .title {
+    padding-left: 30px;
+    padding-right: 10px;
+  }
+  .heading-cart {
+    padding-left: 10px;
+    padding-right: 30px;
+  }
+  .HamburgerIcon {
+    display: none;
+  }
+  .NavBar {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    display: flex;
+  }
 }

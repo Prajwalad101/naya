@@ -1,13 +1,14 @@
 #SearchSection {
   display: flex;
   justify-content: center;
+  grid-area: searchbar;
 }
 
 .SearchBar {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  margin: 20px 20px 20px 20px;
+  margin: 5px 20px 20px 20px;
   width: 100%;
 }
 
@@ -22,7 +23,7 @@
   border: 2px solid #383838;
   border-radius: 25px;
   width: 100%;
-  padding: 12px;
+  padding: 13px;
   font-family: 'Nunito', sans-serif;
 }
 
@@ -32,8 +33,23 @@
 
 .search-box::placeholder {
   color: #888888;
+  font-size: 1rem;
+  font-family: 'Overlock';
 }
 
 input:focus {
   outline: 1px solid rgb(37, 37, 231);
+}
+
+/* Greater tham 650 */
+@media (min-width: 650px) {
+  .search-box {
+    padding: 15px;
+  }
+}
+/* Greater than 900 */
+@media (min-width: 901px) {
+  .SearchBar {
+    margin: 10px 5px 10px 5px;
+  }
 }

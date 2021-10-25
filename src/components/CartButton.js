@@ -20,7 +20,7 @@ export const CartButton = ({ id }) => {
 
   return (
     <div className='add-to-cart'>
-      <BsCartPlus size='1.3rem' onClick={handleClick} className='cart-icon' />
+      <BsCartPlus size='1.5rem' onClick={handleClick} className='cart-icon' />
       <p>Add to cart</p>
     </div>
   );

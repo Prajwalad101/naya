@@ -1,28 +1,28 @@
 export const data = [
   {
     id: 1,
-    name: 'flowers',
+    name: 'jute gift wrappers',
     price: 500,
     image:
       'https://media.istockphoto.com/photos/lavender-and-soap-picture-id1268401469?b=1&k=20&m=1268401469&s=170667a&w=0&h=5qC1jKnVRAkwO0g3kbsFebHASi3aGg2_C_R5GS9FdNQ=',
   },
   {
     id: 2,
-    name: 'cards',
+    name: 'multi-colored woolen hearts',
     price: 250,
     image:
       'https://media.istockphoto.com/photos/mixed-colors-yarn-heart-on-giving-hands-close-up-of-colorful-handmade-picture-id1290711052?b=1&k=20&m=1290711052&s=170667a&w=0&h=cbJrx3-1NGv73QU6HY82TKlYy-ffh9GXZdN6UI7eV6k=',
   },
   {
     id: 3,
-    name: 'sweater',
+    name: 'flavoured sweets',
     price: 450,
     image:
       'https://images.unsplash.com/photo-1454873019514-eae2f086587a?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aGFuZG1hZGV8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60',
   },
   {
     id: 4,
-    name: 'basket',
+    name: 'Gift baskets with unique designs',
     price: 200,
     image:
       'https://images.unsplash.com/photo-1527383214149-cb7be04ae387?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8aGFuZG1hZGV8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60',
