@@ -6,7 +6,7 @@ const TrendingSection = () => {
     <div className='trending-max-width'>
       <section id='TrendingSection'>
         {types.map((type) => (
-          <TComponent type={type} />
+          <TComponent type={type} key={types.indexOf(type)} />
         ))}
       </section>
     </div>

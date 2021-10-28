@@ -1,11 +1,18 @@
-const CartHeading = ({ noItems }) => {
+import { useContext } from 'react';
+import { CartContext } from '../../App';
+
+const CartHeading = () => {
+  const { cartItems } = useContext(CartContext);
+
+  const noItemsAdded = cartItems.length;
+
   let word = '';
-  if (noItems === 0) {
-    word = 'no item';
-  } else if (noItems === 1) {
-    word = noItems + ' item ';
+  if (noItemsAdded === 0) {
+    word = 'no item ';
+  } else if (noItemsAdded === 1) {
+    word = noItemsAdded + ' item ';
   } else {
-    word = noItems + ' items ';
+    word = noItemsAdded + ' items ';
   }
   return (
     <div className='CartHeading'>

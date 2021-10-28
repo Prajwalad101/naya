@@ -1,10 +1,13 @@
 import { BsArrowLeft } from 'react-icons/bs';
+import { Link } from 'react-router-dom';
 
 const CartTitle = () => {
   return (
     <div className='CartTitle'>
       <i className='back-arrow'>
-        <BsArrowLeft size='1.8rem' />
+        <Link to='./'>
+          <BsArrowLeft size={28.8} />
+        </Link>
       </i>
 
       <div className='title'>

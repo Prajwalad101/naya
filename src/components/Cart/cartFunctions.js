@@ -1,6 +1,6 @@
 import { data } from '../../data';
 
-// returns the total price from an array of items
+// Returns the total price from an array of items
 export const calcTotalPrice = (numItems) => {
   let totalPrice = 0;
 
@@ -20,24 +20,36 @@ export const calcTotalPrice = (numItems) => {
   return totalPrice;
 };
 
-// returns and array of default items() from the items added to cart
-export const getDefaultItems = (itemsAdded) => {
-  const defaultItems = [];
-
-  itemsAdded.forEach((item) =>
-    defaultItems.push({ name: item.name, price: item.price, noOfItems: 1 })
-  );
-  return defaultItems;
+// Returns the formatted name of the item
+export const formatName = (itemName, length) => {
+  let formattedName = '';
+  if (itemName.length > length) {
+    formattedName = itemName.slice(0, length) + '...';
+  } else {
+    formattedName = itemName;
+  }
+  return formattedName;
 };
 
-// returns the list of added items from the list of id's
-export const getAddedItems = (idList) => {
-  let itemsAdded = []; // items that were added to cart
+//Removes an item from cart
+export const removeFromCart = (id, cartItems, setCartItems) => {
+  const newItems = cartItems.filter((item) => item.id !== id);
+  setCartItems(newItems);
+};
 
+// Returns a specific item from a given id
+export const itemFromId = (id) => {
+  let cartItem;
   data.forEach((item) => {
-    idList.forEach((id) => {
-      id === item.id && itemsAdded.push(item);
-    });
+    if (id === item.id) {
+      cartItem = item;
+    }
   });
-  return itemsAdded;
+  return { ...cartItem, noOfItems: 1 };
+};
+
+//Order cart items
+
+export const orderItems = (items) => {
+  items.sort((a, b) => (a.price < b.price ? 1 : -1));
 };

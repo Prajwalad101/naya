@@ -3,32 +3,36 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { Main } from './components/Main';
 import { Cart } from './components/Cart/Cart';
 import { Error } from './components/Error';
+import { itemFromId } from './components/Cart/cartFunctions';
 
 export const CartContext = React.createContext();
-
-let cartId = []; // Id of the added cart item
 
 function App() {
   const snackbarRef = useRef(null);
 
-  const [numItems, setNumItems] = useState(0);
+  const [cartItems, setCartItems] = useState([]);
 
   const addToCart = (itemId) => {
-    cartId.push(itemId);
-    setNumItems(cartId.length);
+    const item = itemFromId(itemId);
+    setCartItems([...cartItems, item]);
   };
 
   return (
     <Router>
       <Switch>
         <CartContext.Provider
-          value={{ cartId, numItems, addToCart, snackbarRef }}
+          value={{
+            cartItems,
+            setCartItems,
+            addToCart,
+            snackbarRef,
+          }}
         >
           <Route exact path='/'>
             <Main />
           </Route>
           <Route path='/cart'>
-            <Cart idList={cartId} />
+            <Cart />
           </Route>
         </CartContext.Provider>
         <Route path='*'>

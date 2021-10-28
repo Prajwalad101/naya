@@ -1,38 +1,20 @@
-import { useState } from 'react';
-import { CartItem } from './CartItem';
+import React from 'react';
 import CartTitle from './CartTitle';
 import CartHeading from './CartHeading';
+import CartBody from './CartBody';
+import Checkout from './Checkout';
 
+//CSS
 import '../../css/Cart.css';
 
-// Functions
-import {
-  calcTotalPrice,
-  getDefaultItems,
-  getAddedItems,
-} from './cartFunctions.js';
-
-export const Cart = ({ idList }) => {
-  const itemsAdded = getAddedItems(idList);
-  const defaultItems = getDefaultItems(itemsAdded);
-
-  const [numItems, setNumItems] = useState(defaultItems);
-
+// CART COMPONENT
+export const Cart = () => {
   return (
-    <section id='Cart'>
+    <section>
       <CartTitle />
-      <CartHeading noItems={itemsAdded.length} />
-      {itemsAdded.map((item) => {
-        return (
-          <CartItem
-            key={item.id}
-            item={item}
-            numItems={numItems}
-            setNumItems={setNumItems}
-          />
-        );
-      })}
-      <h3>Total : Rs.{calcTotalPrice(numItems)}</h3>
+      <CartHeading />
+      <CartBody />
+      <Checkout />
     </section>
   );
 };

@@ -8,7 +8,7 @@ const SearchBar = () => {
     <section id='SearchSection'>
       <div className='SearchBar'>
         <i>
-          <FiSearch className='search-icon' size='1.3rem' />
+          <FiSearch className='search-icon' size={20.8} />
         </i>
         <input
           type='text'
