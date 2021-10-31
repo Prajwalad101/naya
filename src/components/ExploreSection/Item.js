@@ -1,4 +1,5 @@
 import { CartButton } from '../CartButton';
+import { formatName } from '../Cart/cartFunctions';
 
 // RETURNS A SPECIFIC ITEM5
 export const Item = ({ name, price, image, id }) => {
@@ -8,7 +9,7 @@ export const Item = ({ name, price, image, id }) => {
         <img src={image} alt={name} />
       </div>
       <div className='item-bottom'>
-        <p className='item-name'>{name}</p>
+        <p className='item-name'>{formatName(name, 30)}</p>
         <div className='price-cart'>
           <p className='item-price'>Rs.{price}</p>
           <CartButton id={id} />

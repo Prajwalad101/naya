@@ -110,6 +110,19 @@
   .Items {
     padding: 0 15px 0 15px;
   }
+  .item-name {
+    font-size: 1rem;
+  }
+  .item-price {
+    font-size: 1.1rem;
+  }
+  .cart-icon {
+    width: 27px;
+    height: 27px;
+  }
+  .add-to-cart p {
+    font-size: 1rem;
+  }
 }
 
 /* Greater than 800 */

@@ -103,3 +103,18 @@
     display: flex;
   }
 }
+
+@media (min-width: 650px) {
+  .TitleBar .title {
+    font-size: 1.7rem;
+  }
+}
+@media (min-width: 900px) {
+  .addtocart-button {
+    width: 33px;
+    height: 33px;
+  }
+  .TitleBar .title {
+    font-size: 2rem;
+  }
+}

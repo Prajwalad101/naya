@@ -340,6 +340,9 @@
 }
 
 @media (min-width: 900px) {
+  .CartTitle .title {
+    font-size: 2rem;
+  }
   .cart-image {
     max-width: 200px;
     height: 160px;
@@ -387,7 +390,7 @@
 
 @media (min-width: 1250px) {
   .CartTitle .title {
-    font-size: 2rem;
+    font-size: 2.3rem;
   }
   .arrow-button {
     width: 37px;

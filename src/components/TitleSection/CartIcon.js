@@ -10,7 +10,7 @@ const CartIcon = () => {
   return (
     <div className='heading-cart'>
       <Link to='/cart'>
-        <IoCartOutline size={29.6} />
+        <IoCartOutline size={29.6} className='addtocart-button' />
         <span>({cartItems.length})</span>
       </Link>
     </div>
