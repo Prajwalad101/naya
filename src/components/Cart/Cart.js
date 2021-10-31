@@ -13,8 +13,10 @@ export const Cart = () => {
     <section>
       <CartTitle />
       <CartHeading />
-      <CartBody />
-      <Checkout />
+      <section className='CartGrid'>
+        <CartBody />
+        <Checkout />
+      </section>
     </section>
   );
 };

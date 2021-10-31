@@ -8,20 +8,27 @@ const CartItem = ({ item }) => {
   const { cartItems, setCartItems } = useContext(CartContext);
   return (
     <div className='CartItem'>
-      <div className='upper-cart-container'>
-        <div className='cart-image-container'>
-          <img src={item.image} alt='' />
+      <div className='left-section'>
+        <div className='image-trash-desktopname'>
+          <img src={item.image} alt='' className='cart-image' />
+          <div className='trash-desktopname'>
+            <h5 className='desktop-name'>{formatName(item.name, 25)}</h5>
+            <FiTrash2
+              className='trash'
+              size={24}
+              onClick={() => removeFromCart(item.id, cartItems, setCartItems)}
+            />
+          </div>
         </div>
-        <FiTrash2
-          className='trash'
-          size={24}
-          onClick={() => removeFromCart(item.id, cartItems, setCartItems)}
-        />
-
-        <Counter singleItem={item} />
+        <h5 className='name'>{formatName(item.name, 25)}</h5>
       </div>
 
-      <h5>{formatName(item.name, 25)}</h5>
+      <Counter singleItem={item} />
+
+      <p className='counter-item-total'>
+        <span>Total : </span>
+        Rs. {item.price * item.noOfItems}
+      </p>
     </div>
   );
 };

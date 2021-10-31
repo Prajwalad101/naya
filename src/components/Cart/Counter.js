@@ -1,7 +1,6 @@
 import { CartContext } from '../../App';
 import { useContext } from 'react';
 import { AiOutlinePlusSquare, AiOutlineMinusSquare } from 'react-icons/ai';
-import { useState } from 'react';
 
 export const Counter = ({ singleItem }) => {
   const { cartItems, setCartItems } = useContext(CartContext);
@@ -48,9 +47,9 @@ export const Counter = ({ singleItem }) => {
           className='increment-counter'
         />
       </div>
-      <p className='item-total'>
-        <span>Total : </span>
-        Rs. {singleItem.price * singleItem.noOfItems}
+      <p className='counter-item-price'>
+        <span>Price : </span>
+        Rs. {singleItem.price}
       </p>
     </div>
   );

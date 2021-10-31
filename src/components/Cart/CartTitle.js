@@ -6,7 +6,7 @@ const CartTitle = () => {
     <div className='CartTitle'>
       <i className='back-arrow'>
         <Link to='./'>
-          <BsArrowLeft size={28.8} />
+          <BsArrowLeft size={28.8} className='arrow-button' />
         </Link>
       </i>
 
