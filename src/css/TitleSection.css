@@ -46,6 +46,10 @@
   align-items: center;
 }
 
+.heading-cart a:hover {
+  color: rgb(117, 117, 117);
+}
+
 .NavBar {
   font-size: 0.9rem;
   grid-area: navbar;
@@ -65,6 +69,11 @@
 
 .NavBar h3 {
   font-size: 1rem;
+}
+
+.NavBar p:hover {
+  cursor: pointer;
+  color: #000;
 }
 
 /* Greater than 400 */

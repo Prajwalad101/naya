@@ -15,6 +15,10 @@ const Items = () => {
             price={item.price}
             image={item.image}
             id={item.id}
+            inStock={item.inStock}
+            rating={item.rating}
+            noRatings={item.noRatings}
+            seller={item.seller}
           />
         );
       })}

@@ -1,6 +1,6 @@
 import { useContext } from 'react';
 
-import { BsCartPlus } from 'react-icons/bs'; // react icons
+import { RiShoppingCartLine } from 'react-icons/ri';
 import { CartContext } from '../App';
 import { SnackbarContext } from './Main';
 
@@ -19,9 +19,8 @@ export const CartButton = ({ id }) => {
   };
 
   return (
-    <div className='add-to-cart'>
-      <BsCartPlus size={24} onClick={handleClick} className='cart-icon' />
-      <p>Add to cart</p>
+    <div className='image-cart-overlay' onClick={handleClick}>
+      <RiShoppingCartLine className='cart-icon' size={24} />
     </div>
   );
 };

@@ -37,6 +37,11 @@
   margin-bottom: 8px;
 }
 
+.trending img:hover {
+  cursor: pointer;
+  transform: scale(1.08);
+}
+
 .trending p {
   font-size: 0.9rem;
   font-family: 'Overpass', sans-serif;
@@ -78,7 +83,7 @@
 
   .trending p {
     font-size: 1.1rem;
-    font-weight: bolder;
+    font-weight: 600;
     font-family: 'Overpass', sans-serif;
   }
 }

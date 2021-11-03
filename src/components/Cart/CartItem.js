@@ -5,6 +5,7 @@ import { formatName, removeFromCart } from './cartFunctions';
 import { CartContext } from '../../App';
 
 const CartItem = ({ item }) => {
+  console.log(item);
   const { cartItems, setCartItems } = useContext(CartContext);
   return (
     <div className='CartItem'>
@@ -12,10 +13,16 @@ const CartItem = ({ item }) => {
         <div className='image-trash-desktopname'>
           <img src={item.image} alt='' className='cart-image' />
           <div className='trash-desktopname'>
-            <h5 className='desktop-name'>{formatName(item.name, 25)}</h5>
+            <div className='item-info'>
+              <h5 className='desktop-name'>{formatName(item.name, 25)}</h5>
+              <p className='cart-instock'>
+                {item.inStock === 'Yes' ? 'IN STOCK' : 'NOT IN STOCK'}
+              </p>
+            </div>
             <FiTrash2
               className='trash'
               size={24}
+              strokeWidth='1.5px'
               onClick={() => removeFromCart(item.id, cartItems, setCartItems)}
             />
           </div>
