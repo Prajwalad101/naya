@@ -49,7 +49,16 @@ export const itemFromId = (id) => {
 };
 
 //Order cart items
-
 export const orderItems = (items) => {
   items.sort((a, b) => (a.price < b.price ? 1 : -1));
+};
+
+//Checks for duplicate items
+export const checkDuplicates = (cartItems, id, setSnackBarType, addToCart) => {
+  if (cartItems.filter((e) => e.id === id).length > 0) {
+    setSnackBarType('duplicate');
+  } else {
+    addToCart(id);
+    setSnackBarType('addtocart');
+  }
 };

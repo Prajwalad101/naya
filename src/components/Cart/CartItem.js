@@ -5,7 +5,6 @@ import { formatName, removeFromCart } from './cartFunctions';
 import { CartContext } from '../../App';
 
 const CartItem = ({ item }) => {
-  console.log(item);
   const { cartItems, setCartItems } = useContext(CartContext);
   return (
     <div className='CartItem'>

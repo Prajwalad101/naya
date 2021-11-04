@@ -1,4 +1,5 @@
 .snackbar {
+  color: white;
   position: fixed;
   left: 50%;
   top: 5%;
@@ -9,7 +10,7 @@
   display: flex;
   align-items: center;
   text-align: center;
-  background-color: #f98d8dc7;
+  background-color: rgb(255, 153, 153);
   z-index: 1;
 }
 
@@ -20,9 +21,8 @@
 .snackbar .message {
   flex: 80%;
   text-align: start;
-  font-weight: bold;
+  font-family: 'Overpass';
 }
-
 #show {
   visibility: visible;
   animation: fadeIn 0.5s, fadeOut 0.5s 2.5s;

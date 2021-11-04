@@ -16,29 +16,28 @@ function App() {
     const item = itemFromId(itemId);
     setCartItems([...cartItems, item]);
   };
-
   return (
     <Router>
-      <Switch>
-        <CartContext.Provider
-          value={{
-            cartItems,
-            setCartItems,
-            addToCart,
-            snackbarRef,
-          }}
-        >
+      <CartContext.Provider
+        value={{
+          cartItems,
+          setCartItems,
+          addToCart,
+          snackbarRef,
+        }}
+      >
+        <Switch>
           <Route exact path='/'>
             <Main />
           </Route>
           <Route path='/cart'>
             <Cart />
           </Route>
-        </CartContext.Provider>
-        <Route path='*'>
-          <Error />
-        </Route>
-      </Switch>
+          <Route path='*'>
+            <Error />
+          </Route>
+        </Switch>
+      </CartContext.Provider>
     </Router>
   );
 }

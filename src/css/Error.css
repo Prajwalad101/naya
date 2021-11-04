@@ -1,0 +1,35 @@
+#Error {
+  width: 80%;
+  margin: 40px auto;
+  text-align: center;
+}
+
+.Error404 {
+  color: rgb(255, 122, 122);
+  margin-bottom: 40px;
+}
+
+#Error h3 {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.goback {
+  font-family: 'Overpass', sans-serif;
+  font-size: 1.1rem;
+  background-color: rgb(255, 126, 126);
+  color: #fff;
+  padding: 7px 20px 5px 20px;
+  border: 1px solid rgb(255, 94, 94);
+  border-radius: 50px;
+}
+
+.goback:hover {
+  cursor: pointer;
+  box-shadow: 0 5px 10px rgb(207, 207, 255);
+}
+
+#Error a {
+  text-decoration: none;
+  color: rgb(238, 238, 238);
+}
