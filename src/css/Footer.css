@@ -1,0 +1,27 @@
+.footer-seperator {
+  width: 50%;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.footer-text {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.name-address {
+  padding-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+.bottom-text {
+  padding-bottom: 5px;
+}
+
+.link-name a,
+.link-react a,
+.link-etsy a {
+  text-decoration: none;
+}

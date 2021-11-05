@@ -5,6 +5,7 @@ import { Snackbar } from './Snackbar';
 import TitleSection from './TitleSection/TitleSection';
 import HeadingSection from './HeadingSection/HeadingSection';
 import ExploreSection from './ExploreSection/ExploreSection';
+import Footer from './FooterSection/Footer';
 
 export const SnackbarContext = React.createContext();
 
@@ -28,6 +29,7 @@ export const Main = () => {
       <TitleSection />
       <HeadingSection />
       <ExploreSection />
+      <Footer />
     </SnackbarContext.Provider>
   );
 };

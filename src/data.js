@@ -1,23 +1,12 @@
 export const data = [
   {
-    id: 10,
-    name: 'Tibetan Agate Anxiety Bracelet, Men Healing Crystal Zen Jewelry, Stress Relief Zen Bracelet, Mens and Womens Unisex Bracelet, Gift for Men ',
-    seller: 'LANAxDESIGNS',
-    inStock: 'no',
-    rating: 4.5,
-    noRatings: 3124,
-    price: 250,
-    image:
-      'https://i.etsystatic.com/18866318/r/il/8db031/2561421751/il_1588xN.2561421751_34gn.jpg',
-  },
-  {
     id: 1,
     name: 'Together Is Our Favourite Place To Be, Romantic Family Couple Wall Art Print, Typography Minimalist Modern Décor, Printable Anniversary Gift',
     seller: 'GoldenxHour',
     noRatings: 4234,
     inStock: 'Yes',
     rating: 5,
-    price: 1000,
+    price: 800,
     image:
       'https://i.etsystatic.com/25481927/r/il/c4734c/2590007626/il_1588xN.2590007626_829x.jpg',
   },
@@ -27,7 +16,7 @@ export const data = [
     noRatings: 2349,
     name: 'GOLD Anniversary Gift I Choose You Pokemon Card Pikachu Boyfriend Girlfriend Him Her Birthday Valentines Day Metal Love One 1st Year Nerdy ',
     seller: 'basicPokemon',
-    price: 250,
+    price: 500,
     inStock: 'Yes',
     image:
       'https://i.etsystatic.com/22106997/r/il/ecdc47/3412272566/il_1588xN.3412272566_tgcm.jpg',
@@ -49,7 +38,7 @@ export const data = [
     seller: 'LineaBe',
     rating: 5,
     noRatings: 421,
-    price: 200,
+    price: 300,
     inStock: 'Yes',
     image:
       'https://i.etsystatic.com/16554837/r/il/542bef/2293801001/il_1588xN.2293801001_stb7.jpg',
@@ -60,7 +49,7 @@ export const data = [
     seller: 'JuneSilkShop',
     rating: 4,
     noRatings: 10242,
-    price: 700,
+    price: 1000,
     inStock: 'Yes',
     image:
       'https://i.etsystatic.com/9674287/r/il/9e654d/1716501613/il_1588xN.1716501613_cv7i.jpg',
@@ -71,7 +60,7 @@ export const data = [
     seller: 'TheMelodyface',
     rating: 4,
     noRatings: 1239,
-    price: 150,
+    price: 300,
     inStock: 'Yes',
     image:
       'https://i.etsystatic.com/7879205/r/il/3a48cb/1333656825/il_1588xN.1333656825_mm04.jpg',
@@ -82,7 +71,7 @@ export const data = [
     seller: 'Studio3DX',
     rating: 4.5,
     noRatings: 9823,
-    price: 1000,
+    price: 400,
     inStock: 'Yes',
     image:
       'https://i.etsystatic.com/12154590/r/il/0b07d9/1765945715/il_1588xN.1765945715_4b4z.jpg',
@@ -92,10 +81,143 @@ export const data = [
     name: 'Likya, Mountain, Modern Wood Wall Art, Mountain Wall Decor, Rustic Wood Wall Art, Wood Wall Hanging, Housewarming Gift, Wood Wall Panel, ',
     seller: 'LamourSoieStore',
     rating: 5,
-    noRatings: 984,
-    price: 200,
+    noRatings: 204,
+    price: 1500,
     inStock: 'Yes',
     image:
       'https://i.etsystatic.com/19453454/r/il/af743f/2991627647/il_1588xN.2991627647_r8wr.jpg',
+  },
+  {
+    id: 9,
+    name: 'CARVED Abstre Wood Art, Wood Wall Art, Wall Decor, Rustic Wood Wall Art, Wood Wall Hanging, Housewarming Gift, Handmade  ',
+    seller: 'LamourSoieStore',
+    rating: 5,
+    noRatings: 984,
+    price: 2000,
+    inStock: 'Yes',
+    image:
+      'https://i.etsystatic.com/29354736/r/il/3c31e7/3152757494/il_1588xN.3152757494_rcrs.jpg',
+  },
+  {
+    id: 10,
+    name: 'Tibetan Agate Anxiety Bracelet, Men Healing Crystal Zen Jewelry, Stress Relief Zen Bracelet, Mens and Womens Unisex Bracelet, Gift for Men ',
+    seller: 'LANAxDESIGNS',
+    inStock: 'no',
+    rating: 4,
+    noRatings: 212,
+    price: 250,
+    image:
+      'https://i.etsystatic.com/18866318/r/il/8db031/2561421751/il_1588xN.2561421751_34gn.jpg',
+  },
+  {
+    id: 11,
+    name: 'Christmas gift, Personalized Decanter set, Personalized Gift, Whiskey glasses, Gift for men, Mens Gift, Gift for Him, Fathers Day gift',
+    seller: 'LANAxDESIGNS',
+    inStock: 'Yes',
+    rating: 4.5,
+    noRatings: 128,
+    price: 2500,
+    image:
+      'https://i.etsystatic.com/20323344/r/il/0d3b8b/2336251507/il_1588xN.2336251507_7e4f.jpg',
+  },
+  {
+    id: 12,
+    name: 'Personalized Makeup Bag, Personalized Toiletry Bag, Mothers Day Gift for Her, Personalized Gift for Mom, Wife, Friends, Best Friend, BFF Day ',
+    seller: 'CustomDivaTees',
+    inStock: 'Yes',
+    rating: 4,
+    noRatings: 314,
+    price: 600,
+    image:
+      'https://i.etsystatic.com/11374426/r/il/293678/2130001756/il_1588xN.2130001756_8giy.jpg',
+  },
+  {
+    id: 13,
+    name: 'Personalised Mug | Initial and Name Mug | Custom Name | Personalised Gift | Coffee Mug | Custom Mugs | Initial Mugs | Birthday | Wedding ',
+    seller: 'alittleuniquenp',
+    inStock: 'Yes',
+    rating: 4,
+    noRatings: 184,
+    price: 500,
+    image:
+      'https://i.etsystatic.com/25334294/r/il/3fa34c/2997015509/il_1588xN.2997015509_h2w8.jpg',
+  },
+  {
+    id: 13,
+    name: 'Engraved Bottle Water Bottle Personalized Bottle Custom Bottle Personalized Gift Wedding Tumbler Personalized Tumbler Bridesmaid GIft ',
+    seller: 'alittleuniquenp',
+    inStock: 'Yes',
+    rating: 4.5,
+    noRatings: 917,
+    price: 500,
+    image:
+      'https://i.etsystatic.com/19829196/r/il/24569c/3404335957/il_1588xN.3404335957_dv65.jpg',
+  },
+  {
+    id: 14,
+    name: 'Personalized Gifts, Breakfast Board Personalized, Baby Gift, Board Personalized, Christmas Gift, Wooden Board ',
+    seller: 'wunderwunch',
+    inStock: 'Yes',
+    rating: 3.5,
+    noRatings: 674,
+    price: 300,
+    image:
+      'https://i.etsystatic.com/23145687/r/il/39d3a6/3083903119/il_1588xN.3083903119_frii.jpg',
+  },
+  {
+    id: 15,
+    name: 'Groomsmen Gift – Personalized Whiskey Decanter Set – A Personalized Gift, great for Groomsmen Gifts ',
+    seller: 'swankyBadger',
+    inStock: 'Yes',
+    rating: 4.5,
+    noRatings: 956,
+    price: 8000,
+    image:
+      'https://i.etsystatic.com/9997414/r/il/d0e9b6/3437286765/il_1588xN.3437286765_ar2w.jpg',
+  },
+  {
+    id: 16,
+    name: 'Our First Home Gift, Custom Wood Map Wall Art, Framed Wood Wall Art, New Home Owner Gift, Housewarming Gift, Personalized Gift for Couple',
+    seller: 'swankyBadger',
+    inStock: 'Yes',
+    rating: 4,
+    noRatings: 1100,
+    price: 1100,
+    image:
+      'https://i.etsystatic.com/19839857/r/il/6f65e1/3069579934/il_1588xN.3069579934_o7nj.jpg',
+  },
+
+  {
+    id: 17,
+    name: 'Beaded Cheese Markers, Cheese Markers, Set of 6 Markers, Charcuterie Board, Cheese Plate, Hostess Gift, Housewarming Gift ',
+    seller: 'TheCGCshop',
+    inStock: 'Yes',
+    rating: 3.5,
+    noRatings: 1035,
+    price: 100,
+    image:
+      'https://i.etsystatic.com/6204951/r/il/f22969/3377740250/il_1588xN.3377740250_nng8.jpg',
+  },
+  {
+    id: 18,
+    name: 'Gift for Husband, Gift For Boyfriend, Anniversary Gift, Birthday Gift, First Anniversary, Gift for Husband, Gift for Boyfriend, Jewelry ',
+    seller: 'ErissaBae',
+    inStock: 'Yes',
+    rating: 4,
+    noRatings: 235,
+    price: 3000,
+    image:
+      'https://i.etsystatic.com/29674501/r/il/1a475e/3466451387/il_1588xN.3466451387_eozm.jpg',
+  },
+  {
+    id: 19,
+    name: 'One Year Dating Gift First Year Together Gifts for 1st year 2nd Year Dating Anniversary Gift for Boyfriend for Girlfriend for Him for Her  ',
+    seller: 'MagicWoOod',
+    inStock: 'Yes',
+    rating: 4.8,
+    noRatings: 125,
+    price: 400,
+    image:
+      'https://i.etsystatic.com/11016068/r/il/16388e/1728522897/il_1588xN.1728522897_61b9.jpg ',
   },
 ];
