@@ -6,14 +6,14 @@
 }
 
 .footer-text {
-  width: 80%;
+  /* width: 80%; */
   margin: 0 auto;
   text-align: center;
 }
 
 .name-address {
   padding-bottom: 10px;
-  font-size: 1.1rem;
+  font-size: 17.6px;
 }
 
 .bottom-text {
