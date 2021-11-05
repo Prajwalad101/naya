@@ -20,13 +20,15 @@ export const Counter = ({ singleItem }) => {
   };
 
   const decrementCounter = () => {
-    setCartItems([
-      ...unChangedItems,
-      {
-        ...singleItem,
-        noOfItems: singleItem.noOfItems - 1,
-      },
-    ]);
+    if (singleItem.noOfItems > 1) {
+      setCartItems([
+        ...unChangedItems,
+        {
+          ...singleItem,
+          noOfItems: singleItem.noOfItems - 1,
+        },
+      ]);
+    }
   };
 
   return (
